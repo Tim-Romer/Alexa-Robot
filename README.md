@@ -33,17 +33,25 @@ MovePositionIntent: This intent allows the user to update the robot’s current 
 
 ## API Gateway CURL
 Get current coordinates:
+
 $ curl -X GET https://1r1ksy5oqg.execute-api.us-east-1.amazonaws.com/default/robot/position
+
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+  
                                  Dload  Upload   Total   Spent    Left  Speed
+                                 
 100    66  100    66    0     0    108      0 --:--:-- --:--:-- --:--:--   108
 
 {"robot":{"Item":{"Y":40,"Orientation":"W","robot":"Bob","X":50}}}
 
 Post new coordinates:
+
 $ curl -d '{"robot" : "Bob", "X" : 70, "Y" : 40, "Orientation" : "W"}' -X POST https://1r1ksy5oqg.execute-api.us-east-1.amazonaws.com/default/robot/position
+
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+  
                                  Dload  Upload   Total   Spent    Left  Speed
+                                 
 100    58    0     0  100    58      0     23  0:00:02  0:00:02 --:--:--    23
 
 
@@ -56,14 +64,14 @@ updateRobotPosition: The lambda function that will update the dynamodb table to 
 RobotFinal
 
 ## Alexa Developer Console Test Runs
-![](https://github.com/Tim-Romer/Alexa-Robot/alexa_test1.PNG)
+![Alexa Test 1](https://github.com/Tim-Romer/Alexa-Robot/alexa_test1.PNG)
 
-![](https://github.com/Tim-Romer/Alexa-Robot/alexa_test2.PNG)
+![Alexa Test 2](https://github.com/Tim-Romer/Alexa-Robot/alexa_test2.PNG)
 
-![](https://github.com/Tim-Romer/Alexa-Robot/alexa_test3.PNG)
+![Alexa Test 3](https://github.com/Tim-Romer/Alexa-Robot/alexa_test3.PNG)
 
 ## HTML w3c Validation
-![](https://github.com/Tim-Romer/Alexa-Robot/w3c_validation.PNG)
+![w3c](https://github.com/Tim-Romer/Alexa-Robot/w3c_validation.PNG)
 
 ## Video Demonstration
 [![Alexa Video](http://img.youtube.com/vi/Pfbc1qADMDE/0.jpg)](https://youtu.be/Pfbc1qADMDE "Alexa Robot Video Demonstration")
