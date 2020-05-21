@@ -1,0 +1,17 @@
+{
+  "name": "helloworld1",
+  "version": "1.0.0",
+  "description": "1) Make sure the ask-sdk is installed (npm install ask-sdk) 2) remove any existing zip file.  3) inside this directory, zip up all files \"zip -r helloworld1.zip\" * 4) Make sure your aws credentials are current 5) Upload the zip to your lambda function. \taws lambda update-function-code --function-name HelloWorld1 --zip-file fileb://helloworld1.zip This will upload the file helloworld1.zip to the existing function called HelloWorld1",
+  "main": "index.js",
+  "dependencies": {
+    "ask-sdk": "^2.8.0",
+    "i18next": "^19.4.4",
+    "i18next-sprintf-postprocessor": "^0.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
